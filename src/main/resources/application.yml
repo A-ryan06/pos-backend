@@ -3,10 +3,8 @@ spring:
     name: pos-system
 
   datasource:
-    url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/${DB_NAME:yt_pos}
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    username: ${DB_USERNAME:root}
-    password: ${DB_PASSWORD:As@12345}
+    url: ${DATABASE_URL}
+    driver-class-name: org.postgresql.Driver
 
   jpa:
     hibernate:
